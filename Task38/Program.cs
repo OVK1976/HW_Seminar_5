@@ -20,13 +20,13 @@ double[] CreateArray(int size)
     Random random = new();
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = Math.Round(random.NextDouble()*random.Next(2,1000),2);
+        array[i] = Math.Round(random.NextDouble()*random.Next(int.MinValue,int.MaxValue),2);
     }
     return array;
 }
 #endregion
 
-#region MaxNumberFind /Находи максимальный элемент массива
+#region MaxNumberFind /Макс. элемент массива
 double MaxNumberFind(double[] array)
 {
     double MaxNumber = array[0];
@@ -42,7 +42,7 @@ double MaxNumberFind(double[] array)
 }
 #endregion
 
-#region MinNumberFind
+#region MinNumberFind /Мин. элемент массива
 // Найти минимальный элемент массива
 double MinNumberFind(double[] array)
 {
