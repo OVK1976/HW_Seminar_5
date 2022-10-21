@@ -6,17 +6,18 @@
 [-4, -6, 89, 6] -> 0 */
 
 Console.Write("Введите размер массива:  ");
-int size = int.Parse(Console.ReadLine());
+    int size = int.Parse(Console.ReadLine());
 
 Console.Write("Задайте минимальное значение диапазона чисел :  ");
-int StartNum = int.Parse(Console.ReadLine());
+    int StartNum = int.Parse(Console.ReadLine());
 
 Console.Write("Задайте максимальное значение диапазона чисел :  ");
-int EndNum = int.Parse(Console.ReadLine());
+    int EndNum = int.Parse(Console.ReadLine());
 
 int[] Nums = CreateArray(size, StartNum, EndNum+1); 
 /* Увеличиваем максимальное число диапазона на 1, 
-т.к. пользователь скорее всего расчитывает что начальное и конечное значения входят в диапазон */
+т.к. пользователь скорее всего расчитывает что начальное 
+и конечное значения входят в диапазон */
 
 Console.WriteLine($"Создан массив: {ArrayToString(Nums)} ");
 
@@ -42,7 +43,7 @@ int CountSumNumber(int[] array)
     int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (i% 2 != 0)
+        if (i % 2 != 0)
         {
             count +=array[i];
         }
@@ -60,7 +61,7 @@ string ArrayToString(int[] array)
     for ( int i = 0; i < array.Length; i++)
         if (i == array.Length-1)
         {
-            result += $"{array[i]} ";
+            result += $"{array[i]}";
         }
         else
         {
