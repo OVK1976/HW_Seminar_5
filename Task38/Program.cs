@@ -18,6 +18,7 @@ double[] CreateArray(int size)
 {
     double[] array = new double[size];
     Random random = new();
+
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = Math.Round(random.NextDouble()*random.Next(int.MinValue,int.MaxValue),2);
