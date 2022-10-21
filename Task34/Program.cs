@@ -48,7 +48,7 @@ string ArrayToString(int[] array)
     for (int i = 0; i < array.Length; i++)
         if (i == array.Length - 1)
         {
-            result += $"{array[i]} ";
+            result += $"{array[i]}";
         }
         else
         {
